@@ -1,0 +1,998 @@
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .slider .dropdown button{
+        margin-top: 20px;
+    }
+    .slider .container h1{
+        font-size: 14px;
+        color: #ff5fb6;
+        padding: 0;
+        margin-top: 40px;
+        background: linear-gradient(-221deg, rgba(255,195,228,.4) 0, rgba(248,234,225,.4) 50%, rgba(247,247,247,.4) 100%);
+        border:0;
+    }
+     .slider .dropdown .dropdown-menu{
+        position: relative;
+     }
+     
+     .stock{
+        padding: 0;
+        box-sizing: border-box;
+     }
+     .stock img{
+        width: 100vw;
+     }
+     nav+div img{
+        margin-bottom: 20px;
+     }
+     nav+div .pull-right{
+        text-align: center;
+     }
+}
+@media (min-width: 1200px){
+    .comp:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 238px;
+        height: 263px;
+        background: url('images/scrub.png') ;
+    }
+    .comp:after{
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 204px;
+        height: 314px;
+        background: url('images/khz.png') ;
+    }
+    footer .dropdown ul{
+        display: block;
+    }
+    footer .dropdown-menu{
+        background: rgba(0,0,0,0);
+        border:0;
+        box-shadow: none;
+
+    }
+   
+    
+    footer .dropdown ul li{
+        padding:0 0 13px 0;
+    }
+    footer .btn{
+        cursor: auto;
+    }
+    footer .btn:hover{
+        color: #fff;
+    }
+    footer .btn:focus{
+        outline: none;
+        border:0;
+        color: #fff;
+    }
+
+}
+@font-face {
+    font-family: "Century Gothic" ;
+    src: url('11528.ttf');
+}
+/*nav*/
+    nav{
+        background: #f5f2f8;
+    }
+    nav ul a{
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+    }
+    nav ul+ul a{
+        font-size: 12px;
+    }
+    nav .glyphicon{
+        width: 16px;
+        height: 17px;
+        background: url('images/sprites.png') -4px -6px;
+    }
+    nav li+li .glyphicon{
+        background: url('images/sprites.png') -23px -7px;
+    }
+    .icon-bar{
+        background: #5b5da8 ;
+    }
+     a{
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 12px;
+        font-weight: 400;
+    }
+/*logo*/
+    nav+div a .glyphicon{
+        width: 37px;
+        height: 36px;
+        background: url('images/sprites.png') -134px -29px;
+        vertical-align: middle;
+    }
+    nav+div a+a .glyphicon{
+        background: url('images/sprites.png') -5px -29px;
+    }
+    nav+div a+a .glyphicon>span{
+        color: #fff;
+        padding-top: 5px;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+        position: absolute;
+        bottom: -5px;
+        left: -8px;
+        width: 22px;
+        height: 22px;
+        background:  #ff5fb6;
+        border-radius: 50%;
+    }
+   
+/*search*/
+    .search .input-group input{
+        border: 1px solid #5b5da8;
+        border-radius: 10px 0 0 10px;
+    }
+    .search .input-group button{
+        background: #ff5fb6;
+        border: #ff5fb6 solid 1px;
+        border-radius: 0 10px 10px 0;
+    }
+    .search button>.glyphicon{
+        width: 14px;
+        height: 14px;
+        background: url('images/sprites.png') -141px -76px;
+    }
+    .search li{
+        color: #ff5fb6;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .top-buffer { 
+        margin-top:23px; 
+    }
+/*slider*/
+   
+    .slider .carousel-inner>.item>img{
+        min-width: 100%;
+        max-width: none;
+    }
+    .slider .container-fluid{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    } 
+    .slider{
+        position: relative;        
+    }
+    .slider .row{      
+        height: 100%;
+    }
+    .carousel-inner{
+        height: 529px;
+        overflow: hidden;
+    }
+    .slider .container{
+        position: relative;
+        height: 100%;
+    }
+    .slider .dropdown{
+        height: 100%;
+    }
+    .slider .dropdown .caret{
+        display: none;
+    }
+    .slider .dropdown button:after{
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        width: 9px;
+        height: 9px;
+        transform: translateY(-70%) rotate(-45deg);
+        border-bottom: #5b5da8 2px solid;
+        border-left: #5b5da8 2px solid; 
+    }
+    .slider .dropdown .btn:hover{
+        color: #5b5da8;
+        background: rgba(0,0,0,0);
+    }
+    .slider .open ul{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .slider button{
+        width: 220px;
+        color: #5b5da8;
+        background: rgba(0,0,0,0);
+        position: relative;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: -65px;
+    }
+    .slider ul{
+        background: rgba(255,255,255,.9);
+      
+    }
+    .slider ul li{
+        padding-top: 20px;
+    }
+    .slider ul li a{
+        white-space: normal;
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    
+    .slider h1{
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        border: 14px solid;
+        border-image-source: linear-gradient(-221deg, rgba(255,195,228,.4) 0%, rgba(248,234,225,.4) 50%, rgba(247,247,247,.4) 100%);
+        border-image-slice: 1;
+        padding: 45px 0;
+        position: absolute;
+        color: #fffeff;
+        font-family: "Century Gothic";
+        font-size: 42px;
+        font-weight: 400;
+    }
+   
+   .slider .row>div:first-child{
+        background: rgba(185,146,217,.5); 
+        position: absolute;
+        width: calc((100% - 1200px)/2);
+        top: 0;
+        bottom: 0;
+        right: 0;
+   }
+    .slider .row>div:first-child:before{
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        width: 250px;
+        height: 100%;
+        background: rgba(185,146,217,.5); 
+        border-radius: 50% 0 0 50%;
+
+    }
+    .slider .dropdown-menu{
+        top:0;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+/*guarantee*/
+    .grnt ul{
+        margin-top: 92px;
+    }
+    .grnt li>div{
+        position: relative;
+        border: 14px solid rgba(192,193,197,.13);
+        padding: 40px 26px;
+
+    }
+    .grnt p{
+        height: 55px;
+        color: #868686;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+        overflow: hidden;
+    }
+    .grnt h2{
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 30px; 
+        position: relative;
+    }
+    .grnt h2:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+    }
+    .grnt li>div:hover{
+        border: 14px solid rgba(91,93,168,.08);
+    }
+    .grnt li .glyphicon{
+        position: absolute;
+        top: -25px;
+        left: 20px;
+        width: 62px;
+        height: 62px;
+        background: url('images/sprites.png') -8px -173px;
+    }
+    .grnt li+li .glyphicon{
+        width: 40px;
+        background: url('images/sprites.png') -80px -170px;
+    }
+    .grnt li+li+li .glyphicon{
+        top:-35px;
+        width: 63px;
+        background: url('images/sprites.png') -122px -170px;
+    }
+
+/*stock*/
+    .stock{
+        margin-top: 80px;
+    }
+    .stock>div{
+        position: relative;
+    }
+    .stock h3{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 213px;
+        color: #fff;
+        font-family: "Century Gothic";
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .stock>div:first-child h3{
+        background: #c5b3d8;
+    }
+    .stock h3 small{
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .stock div+div h3{
+        left: auto;
+        right: 0;
+        font-weight: 400;
+        width: 283px;
+        text-align: right;
+        color: #707070;
+    }
+    .stock div+div h3>div>span{
+        font-size: 72px;
+    }
+    .stock h3 span>span{
+        font-weight: 700;
+
+    }
+    .stock h3 div{
+        background: rgba(255,255,255,.7);
+        margin-bottom: 1px;
+
+    }
+    .srock .row div{
+        position: relative;
+
+    }
+    
+    .stock h3>span:last-child{
+        background: rgba(255,255,255,.7);
+    }
+/*hit*/
+   
+    .hit li>div{
+        overflow: hidden;
+        border: 14px solid rgba(205,205,205,.1);
+        min-height: 429px;
+    }
+    .hit h4{
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .hit li p{
+        text-align: center;
+        color: #ff5fb6;
+        font-family: "Century Gothic";
+        font-size: 24px;
+        font-weight: 400
+
+    }
+    .hit li p+p{
+        padding-top: 30px;
+    }
+    .hit li p span{
+        font-size: 16px;
+    }
+    .hit li p s{
+        color: #5b5da8;
+        font-size: 14px;
+    }
+    .hit li form p{
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        
+    }
+    .hit li:nth-child(2) img{
+        margin-top: -20px;
+    }
+    .hit li:nth-child(2) img+p{
+        margin-top: -50px;
+    }
+    .hit h2{
+        color: #5b5da8;
+        font-family: "Century Gothic";
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        padding-top: 65px;
+    }
+    .hit h2 span+span{
+        position: relative;
+    }
+    .hit h2 .glyphicon{
+        position: absolute;
+        left: 50%;
+        top: auto;
+        bottom:0;
+        transform: translateX(-50%);
+        width: 66px;
+        height: 66px;
+        background: url('images/sprites.png') -60px -5px;
+
+    }
+    .hit h2 span+span:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+    }
+    .hit ul{
+        margin-top: 66px;
+    }
+   
+    .hit li form p span{
+        display: inline-block;
+        padding-top: 5px;
+        width: 31px;
+        height: 31px;
+        border: 1px solid #5b5da8;
+        border-radius: 50%;
+        text-align: center;
+        
+    }
+    .hit li button{
+        border: 1px solid #ff5fb6;
+        background: #ff5fb6;
+        color: #fefefe;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        border-radius: 10px;
+        
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .hit li form{
+        padding: 20px 0;
+    }
+    .hit img+p>span{
+        width: 15px;
+        height: 15px;
+        background: url('images/sprites.png') -41px -7px;
+    }
+/*new*/
+        .new{
+            margin-bottom: 70px;
+        }
+        .new li>div{
+            overflow: hidden;
+            border: 14px solid rgba(205,205,205,.1);
+            min-height: 429px;
+        }
+        .new h4{
+            color: #5b5da8;
+            font-family: "Century Gothic";
+            font-size: 14px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .new li p{
+            text-align: center;
+            color: #ff5fb6;
+            font-family: "Century Gothic";
+            font-size: 24px;
+            font-weight: 400
+
+        }
+        .new li p+p{
+            padding-top: 30px;
+        }
+        .new li p span{
+            font-size: 16px;
+        }
+        .new li p s{
+            color: #5b5da8;
+            font-size: 14px;
+        }
+        .new li form p{
+            color: #5b5da8;
+            font-family: "Century Gothic";
+            font-size: 14px;
+            font-weight: 400;
+            position: relative;
+            
+        }
+        .new li:nth-child(2) img{
+            margin-top: -20px;
+        }
+        .new li:nth-child(2) img+p{
+            margin-top: -50px;
+        }
+        .new h2{
+            color: #5b5da8;
+            font-family: "Century Gothic";
+            font-size: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            padding-top: 65px;
+        }
+        .new h2 span+span{
+            position: relative;
+        }
+        .new h2 .glyphicon{
+            position: absolute;
+            left: 50%;
+            top: auto;
+            bottom:0;
+            transform: translateX(-50%);
+            width: 62px;
+            height: 62px;
+            background: url('images/sprites.png') -75px -108px;
+
+        }    
+        .new h2 span+span:before{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        }
+        .new ul{
+            margin-top: 66px;
+        }
+       
+        .new li form p span{
+            display: inline-block;
+            padding-top: 5px;
+            width: 31px;
+            height: 31px;
+            border: 1px solid #5b5da8;
+            border-radius: 50%;
+            text-align: center;
+            
+        }
+        .new li button{
+            border: 1px solid #ff5fb6;
+            background: #ff5fb6;
+            color: #fefefe;
+            font-family: "Century Gothic";
+            font-size: 14px;
+            border-radius: 10px;
+            
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .new li form{
+            padding: 20px 0;
+        }
+        .new img+p>span{
+            width: 15px;
+            height: 15px;
+            background: url('images/sprites.png') -41px -7px;
+        }
+/*reviews*/
+    .revw{
+        background: #c5b3d8;
+        padding-bottom: 80px;
+    }
+    .revw h2{
+        color: #fff;
+        text-align: center;
+        font-family: "Century Gothic";
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        padding-top: 83px;
+        width: 160px;
+        margin:0 auto 40px auto;
+
+    }
+    
+    
+    .revw h2:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+    }
+    .revw blockquote{
+        border:0;
+        position: relative;
+        color: #ffffff;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+        font-style: italic;
+    }
+    .revw blockquote cite{
+        font-style: normal;
+        font-weight: 700;
+    }
+    .revw blockquote:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 165px;
+        height: 121px;
+        border: 14px solid rgba(255,255,255,.13);
+    }
+    .revw .owl-carousel .nav-btn{
+      height: 35px;
+      position: absolute;
+      width: 35px;
+      cursor: pointer;
+      bottom:0;
+  }
+  .revw .owl-carousel .owl-prev.disabled,
+  .revw .owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+  }
+ 
+  .revw .owl-carousel .prev-slide{
+      border: solid 1px #5b5da8;
+      border-radius: 50%;
+      right: 52%;
+  }
+  .revw .owl-carousel .prev-slide:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #5b5da8;
+    border-left: 1px solid #5b5da8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%) rotate(-45deg);
+
+  }
+  .revw .owl-carousel .next-slide{
+      border: solid 1px #5b5da8;
+      border-radius: 50%;
+      left: 52%;
+  }
+   .revw .owl-carousel .next-slide:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #5b5da8;
+    border-left: 1px solid #5b5da8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-50%) rotate(135deg);
+
+  }
+/*company*/
+    .comp{
+        position: relative;
+        padding-bottom: 130px;
+
+    }
+    .comp .row{
+        position: relative;
+        z-index: 5;
+    }
+    
+    .comp p{
+        color: #707070;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .comp .nav-btn{
+      height: 35px;
+      position: absolute;
+      width: 35px;
+      cursor: pointer;
+      bottom:50%;
+      transform: translateY(50%);
+  }
+  .comp .owl-carousel .owl-prev.disabled,
+  .comp .owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+  }
+ 
+  .comp .owl-carousel .prev-slide{
+      border: solid 1px #5b5da8;
+      border-radius: 50%;
+      left:-60px;
+  }
+  .comp .owl-carousel .prev-slide:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #5b5da8;
+    border-left: 1px solid #5b5da8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%) rotate(-45deg);
+
+  }
+  .comp .owl-carousel .next-slide{
+      border: solid 1px #5b5da8;
+      border-radius: 50%;
+      right: -60px;
+  }
+   .comp .owl-carousel .next-slide:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #5b5da8;
+    border-left: 1px solid #5b5da8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-50%) rotate(135deg);
+
+  }
+  .comp h2{
+            color: #5b5da8;
+            font-family: "Century Gothic";
+            font-size: 36px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            padding-top: 65px;
+            margin-bottom: 62px;
+        }
+        .comp h2 span+span{
+            position: relative;
+        }
+        .comp h2 .glyphicon{
+            position: absolute;
+            left: 50%;
+            top: auto;
+            bottom:0;
+            transform: translateX(-50%);
+            width: 62px;
+            height: 62px;
+            background: url('images/sprites.png') -4px -108px;
+
+        }    
+        .comp h2 span+span:before{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+        }
+ 
+ /*footer*/
+    
+/*footer*/
+    footer>div{
+        background: #765598;
+        padding: 60px 0 0;
+        min-height: 406px;
+    }
+    footer .dropdown{
+        padding: 0;
+    }
+    footer .btn{
+        background: rgba(0,0,0,0);
+        color: #ffffff;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0;
+        margin: 0 0 40px;
+        border:0;
+    }
+    
+     footer h2{
+        color: #fff;
+        text-align: left;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        width: 200px;
+        margin: 0 0 50px;
+        
+
+    }
+    footer .soc{
+        padding: 0;
+    }
+    footer .btn:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+    }
+    footer .btn:hover{
+        color: #fff;
+    }
+    footer h2:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(to right, #ffc3e4 0%, #f8eae1 50%, #f7f7f7 100%);
+    }
+    footer div+ul h2{
+        color: #ffffff;
+        font-family: "Century Gothic";
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+ 
+    footer div+ul .glyphicon{
+        width: 41px;
+        height: 41px;
+        color: #ff5fb6;
+        background: url('images/sprites.png') -181px 0;
+    }
+    footer div+ul a+a .glyphicon{
+        background: url('images/sprites.png') -181px -42px;
+    }
+    footer div+ul a+a+a .glyphicon{
+        background: url('images/sprites.png') -181px -84px;
+    }
+    footer div+ul a+a+a+a .glyphicon{
+        background: url('images/sprites.png') -181px -130px;
+    }
+    footer .dropdown+.dropdown+.dropdown li{
+        position: relative;
+        padding: 0 0 23px 60px;
+        color: #ffffff;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+    }
+    footer .dropdown+.dropdown+.dropdown li:last-child{
+        width: 170px;
+        text-align: justify;
+    }
+    footer .dropdown p{
+        margin-bottom: 0;
+    }
+    footer .dropdown li .glyphicon{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 23px;
+        height: 33px;
+        background: url('images/sprites.png') -8px -73px;
+    }
+    footer .dropdown li+li .glyphicon{
+        width: 27px;
+        background: url('images/sprites.png') -35px -73px;
+    }
+    footer .dropdown li+li+li .glyphicon{
+        width: 30px;
+        background: url('images/sprites.png') -65px -75px;
+        margin-top: 10px;
+    }
+    footer .dropdown li+li+li+li .glyphicon{
+        width: 30px;
+        background: url('images/sprites.png') -102px -75px;
+    }
+    footer>div+p{
+        text-align: center;
+        color: #765598;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+        padding: 22px 0 17px;
+    }
+    footer .dropdown-menu{
+        background: #765598;
+    }
+    footer .dropdown li a{
+       color: #ffffff;
+        font-family: "Century Gothic";
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    
+    
